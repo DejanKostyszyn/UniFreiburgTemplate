@@ -11,6 +11,7 @@ Depending on your computer's operating system you must install the according dis
 * [hyperref](https://ctan.org/pkg/hyperref)
 * [graphicx](https://ctan.org/pkg/graphicx)
 * [biblatex](https://ctan.org/pkg/biblatex)
+* [babel](https://www.ctan.org/pkg/babel)
 
 Some of them may already be included in the distributions.
 ## Structure & How to use
