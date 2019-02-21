@@ -3,7 +3,7 @@ A template for creating presentations with the layout of the [Albert-Ludwigs-Uni
 ## Logo
 I downloaded the official logo from [here](https://de.wikipedia.org/wiki/Datei:Albert-Ludwigs-Universit%C3%A4t_Freiburg_2009_logo.svg). You can also find other formats and datatypes of the logo if you follow the link.
 ## Requirements
-Depending on your computer's operating system you must install the according distribution of [LaTeX](https://www.latex-project.org/get/). You also must have installes the following packages:
+Depending on your computer's operating system you must install the according distribution of [LaTeX](https://www.latex-project.org/get/). You must also have installed the following packages:
 * [inputenc](https://ctan.org/pkg/inputenc)
 * [amsmath](https://ctan.org/pkg/amsmath)
 * [amssymb](https://ctan.org/pkg/amsfonts)
