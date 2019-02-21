@@ -1,0 +1,94 @@
+\documentclass[sansserif, notheorems]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\definecolor{UniBlue}{RGB}{83,121,170}
+\definecolor{UniBlueBright}{RGB}{109,136,170}
+\definecolor{UniBlueDark}{RGB}{58,85,119}
+\definecolor{UniBlueVeryDark}{RGB}{41,61,85}
+
+
+
+%\setbeamertemplate{bibliography item}[triangle]
+
+% If you want to turn on navigation symbols comment out the following line.
+\setbeamertemplate{navigation symbols}{}
+
+\setbeameroption{show notes}
+
+% generally: \setbeamercolor{structure}{fg=<color>}
+% a list of structures: https://pastebin.com/nK3BWG5v
+
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{subtitle}{fg=UniBlueVeryDark}
+\setbeamercolor{author}{fg=UniBlue}
+\setbeamercolor{frametitle}{bg=UniBlueDark,fg=white}
+\setbeamercolor{footlinecolorLeft}{fg=white,bg=UniBlueDark}
+\setbeamercolor{footlinecolorCenter}{fg=white,bg=UniBlue}
+\setbeamercolor{footlinecolorRight}{fg=white,bg=UniBlueBright}
+\setbeamercolor{bibliography entry author}{fg=white,bg=UniBlue}
+\hypersetup{colorlinks,linkcolor=UniBlue, citecolor=UniBlue,urlcolor=UniBlue}
+\setbeamercolor{item}{fg=UniBlue}
+\setbeamercolor{block title}{use=theorem,fg=white,bg=UniBlue}
+\setbeamercolor{block body}{use=theorem,fg=black,bg=white}
+
+
+
+\defbeamertemplate*{title page}{customized}[1][]
+{
+\centering
+  \usebeamerfont{title}\inserttitle\par
+  \smallskip
+  \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par
+  \bigskip
+  \usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par
+  \bigskip
+  \includegraphics[height=3cm]{img/logo1000px.png}\\
+  \bigskip
+  \usebeamerfont{institute}\insertinstitute\par
+  \smallskip
+  \usebeamerfont{date}\insertdate\par
+}
+
+
+% To insert the date in the footline use \insertdate
+% To insert institue use \insertshortinstitute
+\setbeamertemplate{footline}{
+\hbox{%
+   \begin{beamercolorbox}[wd = .3\paperwidth, ht=3ex, dp=2.5ex, center, leftskip=.4cm]{footlinecolorLeft}%
+    \insertshortauthor
+   \end{beamercolorbox}%
+   \begin{beamercolorbox}[wd=.6\paperwidth, ht=3ex, dp=2.5ex, center, leftskip=.4cm,rightskip=.4cm]{footlinecolorCenter}%
+	\insertsectionhead : \insertsubsectionhead
+   \end{beamercolorbox}%
+   \begin{beamercolorbox}[wd=.1\paperwidth, ht=3ex, dp=2.5ex, right, rightskip=.4cm]{footlinecolorRight}%
+   \insertframenumber
+   \end{beamercolorbox}
+   }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% THEOREMS %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{theorems}[numbered]
+\theoremstyle{Definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{lemma}{Lemma}[section]
+
+% For rounded blocks uncomment the following line.
+%\setbeamertemplate{blocks}[rounded][shadow=false]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% TABLE OF CONTENTS %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamertemplate{subsection in toc}[subsubsections numbered]

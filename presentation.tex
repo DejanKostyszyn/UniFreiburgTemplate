@@ -1,0 +1,85 @@
+\input{beamer-template}
+\begin{document}
+
+\author[Kostyszyn]{Dejan Kostyszyn}
+\date{Date of presentation}
+\title{Title of presentation}
+\subtitle{Subtitle of the presentation}
+\institute{Albert-Ludwigs-Universität Freiburg}
+
+
+\begin{frame}[plain, noframenumbering]
+	\titlepage
+\end{frame}
+
+\begin{frame}[plain, noframenumbering]{Table of contents}
+\tableofcontents[sectionstyle=show/show]
+\end{frame}
+
+\section[Short sec title]{A very long section title}
+\begin{frame}
+	This is a presentation especially designed for the Albert-Ludwigs-Universität Freiburg im Breisgau. To do so, i used the beamer-template \cite{ctan_beamer}.
+\end{frame}
+
+\subsection[Short subsec title]{A very long subsection title}
+\begin{frame}{Title of the Frame}
+	\begin{definition}{A Definition} This is a definition \end{definition}
+	\begin{definition} This is a \alert{very important} definition. \end{definition}
+    \begin{theorem} This is a theorem. \end{theorem}
+    \begin{proof} This is a proof. \end{proof}
+\end{frame}
+
+
+\subsection[Include images]{Including a lot of images}
+\begin{frame}[plain]
+	\begin{figure}
+		\centering
+		\includegraphics[scale=.2]{img/Logo1000px.png}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Some text and an image}
+\begin{columns}[T]
+    \begin{column}{.5\textwidth}
+     \begin{block}{A textblock}
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, \dots
+    \end{block}
+    \end{column}
+    \begin{column}{.5\textwidth}
+    \begin{block}{An image}
+    \includegraphics[width=\textwidth]{img/Logo1000px.png}
+    \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\section{Text and Mathematics}
+\begin{frame}{Text}
+	\begin{itemize}
+		\item Just
+		\item some
+		\item items
+		\item and
+		\item now
+		\item maths \dots
+	\end{itemize}
+\end{frame}
+
+
+\subsection[Maths]{Mathematics}
+\begin{frame}{Mathematics}
+	\begin{align}
+     \frac{\partial f}{\partial \xi} &= - \xi e^{-\frac{\xi^2}{2}} \\
+     \frac{\partial^2 f}{\partial \xi^2} &= - e^{-\frac{\xi^2}{2}}+ \xi^2 e^{-\frac{\xi^2}{2}} \\
+     \frac{\partial g}{\partial \xi} &= (l+1) \xi^l \\
+     \frac{\partial^2 g}{\partial \xi^2} &= l(l+1)\xi^{l-1} 
+ \end{align}
+ {\footnotesize Equations from \href{https://de.wikibooks.org/wiki/LaTeX-W\%C3\%B6rterbuch:\_align}{here}.}
+\end{frame}
+
+
+\begin{frame}{Thanks for your attention!}
+	\printbibliography
+\end{frame}
+\end{document}
