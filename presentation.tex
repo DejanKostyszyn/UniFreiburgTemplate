@@ -12,21 +12,45 @@
 	\titlepage
 \end{frame}
 
+
 \begin{frame}[plain, noframenumbering]{Table of contents}
 \tableofcontents[sectionstyle=show/show]
 \end{frame}
 
-\section[Short sec title]{A very long section title}
+
+\section[Theorems]{A list of Theorems}
 \begin{frame}
 	This is a presentation especially designed for the Albert-Ludwigs-Universität Freiburg im Breisgau. To do so, I used the beamer-template \cite{ctan_beamer}.
 \end{frame}
 
-\subsection[Short subsec title]{A very long subsection title}
-\begin{frame}{Title of the Frame}
-	\begin{definition}{A Definition} This is a definition \end{definition}
-	\begin{definition} This is a \alert{very important} definition. \end{definition}
-    \begin{theorem} This is a theorem. \end{theorem}
-    \begin{proof} This is a proof. \end{proof}
+
+\subsection[Def., Cor., Thm., Proof]{Definition, Corollary, Theorem and proof}
+\begin{frame}{Theorems you can use (Part 1)}
+	\begin{definition}[A definition]
+		This is a definition.
+	\end{definition}
+	\begin{corollary}[A very important corollary]
+		This is a \alert{very important} corollary.
+	\end{corollary}
+    \begin{theorem}[A theorem]
+    	This is a theorem.
+    \end{theorem}
+    \begin{proof}[Proof for the theorem]
+    	This is a proof.
+    \end{proof}
+\end{frame}
+
+
+\begin{frame}{Theorems you can use (Part 2)}
+	\begin{proposition}[A proposition]
+		This is a proposition.
+	\end{proposition}
+	\begin{lemma}[A lemma]
+		This is a lemma.
+	\end{lemma}
+	\begin{lemma}[Another lemma]
+		This is another lemma.
+	\end{lemma}
 \end{frame}
 
 
@@ -54,6 +78,7 @@
   \end{columns}
 \end{frame}
 
+
 \section{Text and Mathematics}
 \begin{frame}{Text}
 	\begin{itemize}
@@ -68,14 +93,24 @@
 
 
 \subsection[Maths]{Mathematics}
-\begin{frame}{Mathematics}
-	\begin{align}
-     \frac{\partial f}{\partial \xi} &= - \xi e^{-\frac{\xi^2}{2}} \\
-     \frac{\partial^2 f}{\partial \xi^2} &= - e^{-\frac{\xi^2}{2}}+ \xi^2 e^{-\frac{\xi^2}{2}} \\
-     \frac{\partial g}{\partial \xi} &= (l+1) \xi^l \\
-     \frac{\partial^2 g}{\partial \xi^2} &= l(l+1)\xi^{l-1} 
- \end{align}
- {\footnotesize Equations from \href{https://de.wikibooks.org/wiki/LaTeX-W\%C3\%B6rterbuch:\_align}{here}.}
+\begin{frame}{Mathematics (Part 1)}
+ 	\begin{corollary}[Kleiner Gauß]
+ 	\[
+ 	\sum_{k=1}^n k = \frac{n(n + 1)}{2}
+ 	\]
+ 	\end{corollary}
+\end{frame}
+
+
+\begin{frame}{Mathematics (Part 1)}
+ 	\begin{proof}
+	 	\begin{align}
+ 			n = 1: & \sum_{k=1}^1 k & &= \frac{1 \cdot (1 + 1)}{2} = 1\\
+ 			n: & \sum_{k=1}^n k & & = \frac{n \cdot (n + 1)}{2}, \quad n \in \mathbb{N}\\
+ 			n \rightarrow n+1: & \sum_{k=1}^{n+1} k & & = \frac{n(n + 1)}{2} + (n + 1)\\
+ 			& & &= \frac{(n + 1) \cdot ((n + 1) + 1)}{2}
+ 		\end{align}
+ 	\end{proof}
 \end{frame}
 
 
