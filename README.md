@@ -17,6 +17,6 @@ Depending on your computer's operating system you must install the according dis
 
 Some of them may already be included in the distributions.
 ## Structure & How to use
-* [beamer-template.tex](beamer-template.tex) and [beamer-template2.tex](beamer-template2.tex) should not be touched, unless of course you know what you do. In there the templates for the presentation is defined.
+* [beamer-template.tex](beamer-template.tex) and [beamer-template2.tex](beamer-template2.tex) should not be touched, unless of course you know what you do. In there the templates for the presentation are defined.
 * [presentation.tex](presentation.tex) is the file you can alter. In there you define the content of your presentation. If you want to use [style 1](presentation.pdf), keep line 1 uncommented and line 2 commented. If you want to use [style 2](presentation2.pdf) comment line 1 and uncomment line 2.
 * [references.bib](references.bib) contains your references. There you have to add the sources you want to cite from (see [biblatex](https://ctan.org/pkg/biblatex)).
